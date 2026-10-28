@@ -1,0 +1,184 @@
+:root {
+  color-scheme: light;
+  font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  color: #202a31;
+  background: #f4f6f2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(120deg, rgba(220, 232, 222, 0.55), transparent 44%);
+}
+
+.page {
+  width: min(100% - 40px, 760px);
+  margin: 0 auto;
+  padding: 72px 0 96px;
+}
+
+.page-header {
+  padding-bottom: 42px;
+  border-bottom: 1px solid #cbd4ce;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: #31705c;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.intro {
+  margin-bottom: 0;
+  color: #59645f;
+  font-size: 1.08rem;
+}
+
+section {
+  padding-top: 34px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.section-mark {
+  color: #c17a36;
+  font-size: 1.1rem;
+}
+
+.repo-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.repo-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px 24px;
+  align-items: start;
+  padding: 22px 0;
+  border-top: 1px solid #d6ddd8;
+  animation: arrive 360ms ease-out both;
+}
+
+.repo-main {
+  min-width: 0;
+}
+
+.repo-link {
+  color: #245c4c;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.28rem;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.repo-link:hover {
+  color: #173c32;
+}
+
+.repo-description {
+  margin: 8px 0 0;
+  color: #59645f;
+  line-height: 1.55;
+}
+
+.repo-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 12px;
+  color: #68736d;
+  font-size: 0.82rem;
+}
+
+.repo-date {
+  padding-top: 5px;
+  color: #68736d;
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.list-message {
+  padding: 22px 0;
+  border-top: 1px solid #d6ddd8;
+  color: #59645f;
+}
+
+@keyframes arrive {
+  from {
+    opacity: 0;
+    transform: translateY(7px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 520px) {
+  .page {
+    width: min(100% - 32px, 760px);
+    padding-top: 48px;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+  }
+
+  .repo-item {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .repo-date {
+    padding-top: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
