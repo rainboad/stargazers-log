@@ -1,0 +1,23 @@
+[
+  {
+    "repository": "vercel/next.js",
+    "description": "The React framework for the web.",
+    "url": "https://github.com/vercel/next.js",
+    "language": "JavaScript",
+    "starred_at": "2026-10-24T16:30:00Z"
+  },
+  {
+    "repository": "microsoft/vscode",
+    "description": "Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.",
+    "url": "https://github.com/microsoft/vscode",
+    "language": "TypeScript",
+    "starred_at": "2026-10-20T09:15:00Z"
+  },
+  {
+    "repository": "sindresorhus/ky",
+    "description": "Tiny and elegant HTTP client based on the Fetch API.",
+    "url": "https://github.com/sindresorhus/ky",
+    "language": "TypeScript",
+    "starred_at": "2026-10-12T12:05:00Z"
+  }
+]
